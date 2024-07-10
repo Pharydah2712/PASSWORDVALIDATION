@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB VALIDATION PAGE.</title>
+    <!--css link-->
+    <link rel="stylesheet" type="text/css" href="pd2.css">
+    <!--external link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <header> Signup</header>
+        <form action="#">
+            <div class="field email-field">
+                <div class="input-field">
+            <input type="email" id="email-input" placeholder="Enter your email" class="email" />
+                </div>
+                <span hidden id="email-error">
+                    <span class="error">
+                        <i class='bx bxs-error-circle error-icon'></i>
+                        <p class="error-text"> Please enter a valid email adress</p>
+                    </span>
+                </span>
+            </div>
+            <div class="field create-password">
+                <div class="input-field">
+            <input type="password" id="password-field" placeholder="Create Password" class="password" />
+            <span hidden id="passwordeye-icon"><i class="bx bxs-hide"id="toggle-password"></i></span>
+                </div>
+            
+                <span hidden id="password-error">
+                    <span class="error password-error">
+                        <i class="bx bx-error-circle error icon"></i>
+                        <p class="error-text"> Enter atleast 8 character with number, special character, uppercase and lowercase.</p>
+                    </span>
+                </span>
+            </div>
+            <div class="field confirm-password">
+                <div class="input-field">
+            <input type="password" id="reconfirm-password" placeholder="Confirm Password" class="cPassword"  />
+            <span hidden id="passwordeye-icon"> <i class="bx bxs-hide" id="togglepassword"></i></span>
+                </div>
+                <span  class="error confirm-password error" >
+                <span hidden id="reconfirm-password-error">
+                <i class="bx bxs-error-circle error icon"></i>
+                    <p class="error-text">
+                         Password don't match</p>
+                </span>
+                </span>
+            </div>
+           <div class="input-field button">
+            <input type="submit" value="Submit Now!">
+           </div> 
+        </form>
+    </div>
+    <!--javascript-->
+    <script src="pd2.js"></script>
+</body>
+</html> 
