@@ -61,10 +61,8 @@ form.input-field {
  margin-top: 3px;
  color: red;
  font-size: 10px;
- display: none;
  }
  
-.bx{margin-left: -30px; cursor: pointer;}
 .error{
     color: red;
     display: flex;
@@ -102,3 +100,10 @@ transition: all 0.3s ease;
  .button input:hover {
     background-color: #0e4bf1;
  }
+.password-toggle-icon{
+    cursor: pointer;
+    position: absolute;
+    top:47%;
+    cursor: pointer;
+    margin-left:-30px;
+}
